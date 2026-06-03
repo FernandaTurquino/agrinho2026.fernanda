@@ -1,64 +1,66 @@
-<html>
-    <head>
-        <title>Site do Projeto</title>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultura Sustentável & Controle de Pragas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        <style>
-            /* AQUI COMEÇA O CSS PARA DAR COR E TAMANHO */
-
-            /* ESTILO PARA O BLOCO VERDE QUE SEGURA TUDO */
-            .bloco1{
-                background-color: #2ecc71; /* DEFINE A COR DE FUNDO COMO VERDE */
-                padding: 20px; /* COLOCA UM ESPAÇO DE 20 PIXELS DENTRO */
-                font-family: sans-serif; /* USA UMA FONTE SEM AQUELAS SERIFAS */
-                text-align: center; /* ALINHA TODO O TEXTO NO MEIO */
-                color: white; /* COLOCA A COR DA LETRA COMO BRANCO */
-            } /* FECHA O ESTILO DO BLOCO 1 */
-
-
-            /* ESTILO PARA A CAIXA QUE FICA NO CENTRO */
-            .caixa-meio {
-                border: 2px solid #ccc; /* COLOCA UMA BORDA CINZA DE 2 PIXELS */
-                margin: 20px; /* EMPURRA AS COISAS DE FORA 20 PIXELS */
-                padding: 15px; /* EMPURRA O TEXTO DE DENTRO 15 PIXELS */
-                color: black; /* MUDA A LETRA PARA PRETO PARA LER MELHOR */
-            } /* FECHA O ESTILO DA CAIXA MEIO */
-
-            /* ESTILO DO BOTÃO AMARELO */
-            #btn1 {
-                background: #f1c40f; /* COLOCA O FUNDO DO BOTÃO EM AMARELO */
-                border: none; /* TIRA AQUELA BORDA FEIA DO BOTÃO */
-                padding: 10px; /* DEFINE O TAMANHO INTERNO DO BOTÃO */
-                font-weight: bold; /* DEIXA O TEXTO EM NEGRITO */
-                cursor: pointer; /* MOSTRA A MÃOZINHA QUANDO PASSA O MOUSE */
-            } /* FECHA O ESTILO DO BOTÃO */
-
-            /* ESTILO DO TEXTO DO RODAPÉ */
-            .texto1 {
-                font-size: 12px; /* DEIXA A LETRA BEM PEQUENININHA */
-                margin-top: 50px; /* EMPURRA O RODAPÉ PARA BAIXO */
-                border-top: 1px solid #000; /* CRIA UMA LINHA PRETA EM CIMA */
-            } /* FECHA O ESTILO DO TEXTO 1 */
-
-            /* FIM DA TAG DE ESTILO CSS */
-        </style>
-    </head>
-    <body>
-        
-        <div class="bloco1">
-
-            <div style="font-size: 25px;">Meu Projeto de Tecnologia</div>
-            <div class="caixa-meio">
-                <p>O milho vira bioplástico e depois vira música!</p>
-
-                <div id="btn1" onclick="alert('Incrível, né?')">CLIQUE AQUI</div>
-            </div>
-
-            <div class="texto1">Criado por mim</div>
+    <header>
+        <div class="container">
+            <h1>EcoAgro</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#metodos">Métodos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-        <script>
-            // MANDA UMA MENSAGEM PARA O CONSOLE DO DESENVOLVEDOR
-            console.log("O site abriu."); // REGISTRA O LOG DE ABERTURA
-        </script>
-    </body>
+    <section class="banner">
+        <div class="banner-text">
+            <h2>Cultivando o Futuro com Equilíbrio</h2>
+            <p>Descubra como o controle de pragas sustentável protege as lavouras sem agredir o meio ambiente.</p>
+            <a href="#metodos" class="btn">Saiba Mais</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="container section">
+        <h2>O que é Agricultura Sustentável?</h2>
+        <p>É um modelo de produção que busca garantir a segurança alimentar das próximas gerações, integrando a saúde ambiental, a viabilidade econômica e a equidade social. No manejo de pragas, o foco muda da <strong>erradicação química</strong> para o <strong>equilíbrio do ecossistema</strong>.</p>
+    </section>
+
+    <section id="metodos" class="bg-light section">
+        <div class="container">
+            <h2 class="text-center">Práticas de Controle Sustentável</h2>
+            <div class="grid">
+                
+                <div class="card">
+                    <h3>Controle Biológico</h3>
+                    <p>Uso de inimigos naturais (insetos predadores, parasitoides ou microrganismos) para reduzir a população de pragas de forma orgânica.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Rotação de Culturas</h3>
+                    <p>Alternar as espécies plantadas na mesma área quebra o ciclo de vida de pragas e doenças específicas de um único cultivo.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Defensivos Naturais</h3>
+                    <p>Utilização de extratos vegetais (como óleo de neem), caldas naturais e armadilhas de feromônio para afastar insetos nocivos.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 EcoAgro - Práticas Sustentáveis para o Campo.</p>
+    </footer>
+
+</body>
 </html>
