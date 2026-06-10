@@ -1,64 +1,206 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agricultura Sustentável & Controle de Pragas</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pragas e Controles Sustentáveis</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f4f9f4;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:#2e7d32;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+nav{
+    background:#1b5e20;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#c8e6c9;
+}
+
+section{
+    max-width:1000px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+h2{
+    color:#2e7d32;
+    margin-bottom:15px;
+}
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    margin-top:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    flex:1 1 250px;
+}
+
+.card h3{
+    color:#1b5e20;
+    margin-bottom:10px;
+}
+
+footer{
+    background:#2e7d32;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+.botao{
+    display:inline-block;
+    background:#43a047;
+    color:white;
+    padding:12px 20px;
+    border-radius:8px;
+    text-decoration:none;
+    margin-top:15px;
+}
+
+.botao:hover{
+    background:#2e7d32;
+}
+</style>
+
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <h1>Cultivo Inteligente</h1>
-            <nav>
-                <ul>
-                    <li><a href="#sobre">Controle de pragas com soluções sustentáveis</a></li
-                   </ul>
-            </nav>
+<header>
+    <h1>Pragas e Controles Sustentáveis</h1>
+    <p>Protegendo plantações e o meio ambiente</p>
+</header>
+
+<nav>
+    <a href="#pragas">Pragas</a>
+    <a href="#controle">Controle Sustentável</a>
+    <a href="#beneficios">Benefícios</a>
+    <a href="#contato">Contato</a>
+</nav>
+
+<section id="pragas">
+    <h2>Principais Pragas Agrícolas</h2>
+    <p>
+        As pragas agrícolas podem causar grandes prejuízos às plantações,
+        reduzindo a produtividade e a qualidade dos alimentos.
+    </p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Pulgões</h3>
+            <p>Sugam a seiva das plantas e podem transmitir doenças.</p>
         </div>
-    </header>
 
-    <section class="banner">
-        <div class="banner-text">
-            <h2>Cultivando o Futuro com Equilíbrio</h2>
-            <p>Descubra como o controle de pragas sustentável protege as lavouras sem agredir o meio ambiente.</p>
-            <a href="#metodos" class="btn">Saiba Mais</a>
+        <div class="card">
+            <h3>Lagartas</h3>
+            <p>Consomem folhas e frutos, causando danos significativos.</p>
         </div>
-    </section>
 
-    <section id="sobre" class="container section">
-        <h2>O que é Agricultura Sustentável?</h2>
-        <p>É um modelo de produção que busca garantir a segurança alimentar das próximas gerações, integrando a saúde ambiental, a viabilidade econômica e a equidade social. No manejo de pragas, o foco muda da <strong>erradicação química</strong> para o <strong>equilíbrio do ecossistema</strong>.</p>
-    </section>
-
-    <section id="metodos" class="bg-light section">
-        <div class="container">
-            <h2 class="text-center">Práticas de Controle Sustentável</h2>
-            <div class="grid">
-                
-                <div class="card">
-                    <h3>Controle Biológico</h3>
-                    <p>Uso de inimigos naturais (insetos predadores, parasitoides ou microrganismos) para reduzir a população de pragas de forma orgânica.</p>
-                </div>
-
-                <div class="card">
-                    <h3>Rotação de Culturas</h3>
-                    <p>Alternar as espécies plantadas na mesma área quebra o ciclo de vida de pragas e doenças específicas de um único cultivo.</p>
-                </div>
-
-                <div class="card">
-                    <h3>Defensivos Naturais</h3>
-                    <p>Utilização de extratos vegetais (como óleo de neem), caldas naturais e armadilhas de feromônio para afastar insetos nocivos.</p>
-                </div>
-
-            </div>
+        <div class="card">
+            <h3>Mosca-branca</h3>
+            <p>Afeta diversas culturas e favorece o aparecimento de fungos.</p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <footer>
-        <p>&copy; 2026 EcoAgro - Práticas Sustentáveis para o Campo.</p>
-    </footer>
+<section id="controle">
+    <h2>Controles Sustentáveis</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Controle Biológico</h3>
+            <p>
+                Uso de inimigos naturais, como joaninhas e vespas parasitoides,
+                para reduzir populações de pragas.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Armadilhas</h3>
+            <p>
+                Armadilhas adesivas e feromônios ajudam no monitoramento e
+                controle sem uso excessivo de químicos.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Rotação de Culturas</h3>
+            <p>
+                Diminui a proliferação de pragas ao alterar o ambiente de
+                desenvolvimento delas.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="beneficios">
+    <h2>Benefícios da Sustentabilidade</h2>
+
+    <ul>
+        <li>Redução do uso de pesticidas químicos.</li>
+        <li>Proteção da biodiversidade.</li>
+        <li>Maior equilíbrio ecológico.</li>
+        <li>Produção agrícola mais segura.</li>
+        <li>Preservação do solo e da água.</li>
+    </ul>
+
+    <a href="#contato" class="botao">Saiba Mais</a>
+</section>
+
+<section id="contato">
+    <h2>Contato</h2>
+
+    <form>
+        <label>Nome:</label><br>
+        <input type="text" style="width:100%;padding:10px;"><br><br>
+
+        <label>E-mail:</label><br>
+        <input type="email" style="width:100%;padding:10px;"><br><br>
+
+        <label>Mensagem:</label><br>
+        <textarea rows="5" style="width:100%;padding:10px;"></textarea><br><br>
+
+        <button type="submit" class="botao">Enviar</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2026 - Site Educativo sobre Pragas e Controles Sustentáveis</p>
+</footer>
 
 </body>
 </html>
