@@ -6,17 +6,11 @@
 <title>Pragas e Controles Sustentáveis</title>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: Arial, sans-serif;
-}
-
 body{
+    margin:0;
+    font-family:Arial, sans-serif;
     background:#f4f9f4;
     color:#333;
-    line-height:1.6;
 }
 
 header{
@@ -36,42 +30,40 @@ nav a{
     color:white;
     text-decoration:none;
     margin:0 15px;
-    font-weight:bold;
-}
-
-nav a:hover{
-    color:#c8e6c9;
 }
 
 section{
-    max-width:1000px;
+    max-width:1100px;
     margin:auto;
     padding:40px 20px;
 }
 
 h2{
     color:#2e7d32;
-    margin-bottom:15px;
 }
 
 .cards{
     display:flex;
     flex-wrap:wrap;
     gap:20px;
-    margin-top:20px;
 }
 
 .card{
     background:white;
-    padding:20px;
     border-radius:10px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.1);
-    flex:1 1 250px;
+    overflow:hidden;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+    flex:1 1 300px;
 }
 
-.card h3{
-    color:#1b5e20;
-    margin-bottom:10px;
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
 }
 
 footer{
@@ -79,61 +71,52 @@ footer{
     color:white;
     text-align:center;
     padding:20px;
-    margin-top:30px;
-}
-
-.botao{
-    display:inline-block;
-    background:#43a047;
-    color:white;
-    padding:12px 20px;
-    border-radius:8px;
-    text-decoration:none;
-    margin-top:15px;
-}
-
-.botao:hover{
-    background:#2e7d32;
 }
 </style>
-
 </head>
+
 <body>
 
 <header>
     <h1>Pragas e Controles Sustentáveis</h1>
-    <p>Protegendo plantações e o meio ambiente</p>
+    <p>Soluções ecológicas para a agricultura</p>
 </header>
 
 <nav>
     <a href="#pragas">Pragas</a>
     <a href="#controle">Controle Sustentável</a>
     <a href="#beneficios">Benefícios</a>
-    <a href="#contato">Contato</a>
 </nav>
 
 <section id="pragas">
-    <h2>Principais Pragas Agrícolas</h2>
-    <p>
-        As pragas agrícolas podem causar grandes prejuízos às plantações,
-        reduzindo a produtividade e a qualidade dos alimentos.
-    </p>
+    <h2>Principais Pragas</h2>
 
     <div class="cards">
+
         <div class="card">
-            <h3>Pulgões</h3>
-            <p>Sugam a seiva das plantas e podem transmitir doenças.</p>
+            <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800" alt="Pulgões">
+            <div class="card-content">
+                <h3>Pulgões</h3>
+                <p>Insetos que sugam a seiva das plantas e prejudicam o desenvolvimento das culturas.</p>
+            </div>
         </div>
 
         <div class="card">
-            <h3>Lagartas</h3>
-            <p>Consomem folhas e frutos, causando danos significativos.</p>
+            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=800" alt="Lagarta">
+            <div class="card-content">
+                <h3>Lagartas</h3>
+                <p>Podem consumir folhas e frutos, causando grandes perdas agrícolas.</p>
+            </div>
         </div>
 
         <div class="card">
-            <h3>Mosca-branca</h3>
-            <p>Afeta diversas culturas e favorece o aparecimento de fungos.</p>
+            <img src="https://images.unsplash.com/photo-1471193945509-9ad0617afabf?w=800" alt="Mosca branca">
+            <div class="card-content">
+                <h3>Mosca-branca</h3>
+                <p>Praga comum em hortaliças e outras culturas de importância econômica.</p>
+            </div>
         </div>
+
     </div>
 </section>
 
@@ -141,65 +124,48 @@ footer{
     <h2>Controles Sustentáveis</h2>
 
     <div class="cards">
+
         <div class="card">
-            <h3>Controle Biológico</h3>
-            <p>
-                Uso de inimigos naturais, como joaninhas e vespas parasitoides,
-                para reduzir populações de pragas.
-            </p>
+            <img src="https://images.unsplash.com/photo-1457530378978-8bac673b8062?w=800" alt="Joaninha">
+            <div class="card-content">
+                <h3>Controle Biológico</h3>
+                <p>Uso de joaninhas, fungos e outros inimigos naturais para controlar pragas.</p>
+            </div>
         </div>
 
         <div class="card">
-            <h3>Armadilhas</h3>
-            <p>
-                Armadilhas adesivas e feromônios ajudam no monitoramento e
-                controle sem uso excessivo de químicos.
-            </p>
+            <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=800" alt="Plantação">
+            <div class="card-content">
+                <h3>Rotação de Culturas</h3>
+                <p>Alternar culturas ajuda a interromper o ciclo de vida de diversas pragas.</p>
+            </div>
         </div>
 
         <div class="card">
-            <h3>Rotação de Culturas</h3>
-            <p>
-                Diminui a proliferação de pragas ao alterar o ambiente de
-                desenvolvimento delas.
-            </p>
+            <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800" alt="Armadilha">
+            <div class="card-content">
+                <h3>Armadilhas Ecológicas</h3>
+                <p>Auxiliam no monitoramento e controle sem prejudicar o meio ambiente.</p>
+            </div>
         </div>
+
     </div>
 </section>
 
 <section id="beneficios">
-    <h2>Benefícios da Sustentabilidade</h2>
+    <h2>Benefícios</h2>
 
     <ul>
-        <li>Redução do uso de pesticidas químicos.</li>
+        <li>Menor uso de pesticidas químicos.</li>
         <li>Proteção da biodiversidade.</li>
-        <li>Maior equilíbrio ecológico.</li>
-        <li>Produção agrícola mais segura.</li>
         <li>Preservação do solo e da água.</li>
+        <li>Produção agrícola mais sustentável.</li>
+        <li>Alimentos mais seguros para consumo.</li>
     </ul>
-
-    <a href="#contato" class="botao">Saiba Mais</a>
-</section>
-
-<section id="contato">
-    <h2>Contato</h2>
-
-    <form>
-        <label>Nome:</label><br>
-        <input type="text" style="width:100%;padding:10px;"><br><br>
-
-        <label>E-mail:</label><br>
-        <input type="email" style="width:100%;padding:10px;"><br><br>
-
-        <label>Mensagem:</label><br>
-        <textarea rows="5" style="width:100%;padding:10px;"></textarea><br><br>
-
-        <button type="submit" class="botao">Enviar</button>
-    </form>
 </section>
 
 <footer>
-    <p>&copy; 2026 - Site Educativo sobre Pragas e Controles Sustentáveis</p>
+    <p>Pragas e Controles Sustentáveis © 2026</p>
 </footer>
 
 </body>
